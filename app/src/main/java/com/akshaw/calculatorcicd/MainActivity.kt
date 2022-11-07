@@ -3,6 +3,7 @@ package com.akshaw.calculatorcicd
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import com.akshaw.calculatorcicd.presentation.CalculatorScreen
 import com.akshaw.calculatorcicd.ui.theme.CalculatorCICDTheme
 
 class MainActivity : ComponentActivity() {
@@ -10,7 +11,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CalculatorCICDTheme {
-
+                CalculatorScreen()
             }
         }
     }
